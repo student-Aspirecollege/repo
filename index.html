@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software House - Lahore</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+
+     body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.service, .project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+</style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1>XYZ Software House</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>XYZ Software House is a leading software development company based in Lahore, specializing in web and mobile applications.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Building responsive and user-friendly websites.</p>
+        </div>
+        <div class="service">
+            <h3>Mobile App Development</h3>
+            <p>Creating innovative mobile applications for Android and iOS.</p>
+        </div>
+        <div class="service">
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and engaging user interfaces.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project">
+            <h3>Project A</h3>
+            <p>Description of Project A.</p>
+        </div>
+        <div class="project">
+            <h3>Project B</h3>
+            <p>Description of Project B.</p>
+        </div>
+        <div class="project">
+            <h3>Project C</h3>
+            <p>Description of Project C.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 XYZ Software House, Lahore</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    alert(`Thank you for your message, ${name}! We will get back to you soon.`);
+    
+    // Optionally, clear the form fields
+    this.reset();
+});
+
+    </script>
+</body>
+</html>
